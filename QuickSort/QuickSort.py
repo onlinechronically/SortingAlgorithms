@@ -5,5 +5,4 @@ def quickSort(arr):
     for n in arr[:-1]:
         if n >= pivot: larger.append(n)
         elif n < pivot: smaller.append(n)
-    print(smaller, larger)
     return quickSort(smaller) + [pivot] + quickSort(larger)
